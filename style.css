@@ -1,0 +1,37 @@
+:root {
+    font-family: "Roboto";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.menu-section {
+    background-color: #1992D4;
+}
+
+.svg {
+    filter: invert(1) sepia(0) saturate(0) hue-rotate(175deg);
+}
+
+.menu-section div:not([class]) {
+    color: white;
+    display: inline;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+input {
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.pfp {
+    border-radius: 100%;
+}
