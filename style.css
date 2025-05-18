@@ -1,14 +1,18 @@
 :root {
     font-family: "Roboto";
+    font-size: 12px;
 }
 
 .container {
+    margin: 0px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 1fr auto-fit;
 }
 
 .menu-section {
     background-color: #1992D4;
+    grid-row: 1/3;
 }
 
 .svg {
@@ -22,16 +26,52 @@
 
 .menu ul {
     list-style-type: none;
+    padding-left: 0px;
 }
+
 
 input {
     background-color: whitesmoke;
-    width: 100%;
+    width: 300px;
+    box-sizing: border-box;
     border-radius: 10px;
     border: none;
     padding: 10px;
 }
 
+.header-section > * {
+    display: flex;
+}
+
+.header-section > * > * {
+    display: flex;
+    align-items: center;
+}
+
+.header-section > * > .right {
+    margin-left: auto;
+}
+
 .pfp {
     border-radius: 100%;
 }
+
+.content {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+}
+
+.orange {
+    height: 100%;
+    width: 10px;
+    background-color: orange;
+}
+
+
