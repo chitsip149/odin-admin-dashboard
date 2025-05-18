@@ -5,6 +5,7 @@
     --font-md: 16px;
     --font-lg: 18px;
     --font-xl: 20px;
+    line-height: 1.5em;
 }
 
 .container {
@@ -51,6 +52,11 @@
     padding-left: 0px;
 }
 
+
+.header-section, .content {
+    padding: 24px;
+}
+
 .search {
     width: 100%;
 }
@@ -72,6 +78,7 @@ input {
 .header-section > * > * {
     display: flex;
     align-items: center;
+    gap: 24px;
 }
 
 .header-section > * > .right {
@@ -89,14 +96,14 @@ input {
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 24px;
 }
 
 .content {
     background-color: whitesmoke;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-
+    grid-template-columns: 2.5fr 1fr;
+    gap: 24px;
 }
 
 .card {
@@ -104,6 +111,15 @@ input {
     grid-template-columns: 10px 1fr;
     background-color: white;
     border-radius: 5px;
+}
+
+h3, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card div:nth-child(2) {
+    padding: 16px;
 }
 
 .orange {
@@ -115,21 +131,89 @@ input {
 
 hr {
     border-top: 1px solid rbga(255, 255, 255, 0.3);
-    margin: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
 }
 
 .trending > * {
     display: flex;
     align-items: center;
+    gap: 24px;
 }
 
 .announcements, .trending {
     background-color: white;
+    border-radius: 5px;
+    padding: 24px;
 }
 
 .git-buttons {
     display: flex;
     justify-content: right;
+    margin-top: 24px;
 }
+
+/* .content-header {
+    margin-top: 24px;
+    margin-bottom: 10px;
+} */
+ 
+.trending-header {
+    margin-top: 24px;
+}
+
+.content-header {
+    margin-bottom: 10px;
+    font-size: var(--font-lg);
+    font-weight: bold;
+} 
+
+h3 {
+    font-size: var(--font-lg);
+    margin-bottom: 10px;
+}
+
+.username,
+.user-handle,
+.greetings {
+    font-weight: bold;
+}
+
+.username {
+    font-size: var(--font-lg);
+}
+
+.user-handle {
+    font-size: var(--font-xl);
+}
+
+.greetings {
+    font-size: var(--font-md);
+}
+
+p, .name {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+button {
+    background-color: #1992D4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: var(--font-md);
+    font-weight: bold;
+}
+
+.card, .announcements, .trending {
+    box-shadow: 1.5px 1.5px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
 
 
