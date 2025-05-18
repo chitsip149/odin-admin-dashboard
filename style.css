@@ -1,27 +1,49 @@
 :root {
     font-family: "Roboto";
-    font-size: 12px;
+    --font-xs: 12px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 20px;
 }
 
 .container {
     margin: 0px;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3.5fr;
-    grid-template-rows: 1fr auto-fit;
+    grid-template-rows: 1fr 4fr;
 }
 
 .menu-section {
     background-color: #1992D4;
     grid-row: 1/3;
+    padding: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
 }
 
 .svg {
     filter: invert(1) sepia(0) saturate(0) hue-rotate(175deg);
 }
 
-.menu-section div:not([class]) {
+.dashboard, .menu-text {
     color: white;
     display: inline;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.dashboard {
+    font-size: var(--font-xl);
+}
+
+.menu-text {
+    font-size: var(--font-md);
 }
 
 .menu ul {
