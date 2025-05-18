@@ -159,6 +159,10 @@ hr {
     margin-top: 24px;
 }
 
+.git-buttons > * {
+    padding: 8px;
+}
+
 /* .content-header {
     margin-top: 24px;
     margin-bottom: 10px;
